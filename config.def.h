@@ -19,7 +19,7 @@ static int borderpx = 15;
 static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
-char *scroll = NULL;
+char *scroll = "scroll";
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
@@ -97,8 +97,7 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
   /* 8 normal colors */
   "#3b4252", /* black   */
-  "#bf616a", /* red     */
-  "#a3be8c", /* green   */
+  "#bf616a", /* red     */ "#a3be8c", /* green   */
   "#ebcb8b", /* yellow  */
   "#81a1c1", /* blue    */
   "#b48ead", /* magenta */
